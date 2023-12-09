@@ -20,7 +20,7 @@ module.exports = {
       directory: path.resolve(__dirname, 'dist'),
     },
     port: 3000,
-    open: true,
+    // open: true,
     hot: true,
     compress: true,
     historyApiFallback: true,
@@ -53,6 +53,6 @@ module.exports = {
       filename: 'index.html',
       template: 'src/template.html',
     }),
-    new BundleAnalyzerPlugin(),
+    // new BundleAnalyzerPlugin(),
   ],
 }

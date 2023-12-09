@@ -28,7 +28,7 @@ function getWeather(city) {
             document.querySelector('.loading').remove();
             const weatherData = res.data.current;
 
-            // Update temperature and condition
+            // Update temperature and condition .
             result.textContent = `${weatherData.temp_c}°C`;
             weatherImg.src = weatherData.condition.icon;
 
