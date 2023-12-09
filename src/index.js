@@ -1,6 +1,5 @@
 const giphyKey = '&api_key=CrpHODR2TAesMkW7XQc3ZAV0BcfOvLpk'
 
-const url = 'http://api.giphy.com/v1/gifs/search?q=funny+cat'
 import './styles/main.css';
 import axios from "axios"
 const button = document.getElementById('getWeatherBtn');
@@ -21,7 +20,7 @@ function getWeather(city) {
     if (c) c.remove();
     weatherImg.src = "";
     showLoading();
-    const url = `http://api.weatherapi.com/v1/current.json?key=dfecc53d1ca344578de35309230912&q=${city}`;
+    const url = `https://api.weatherapi.com/v1/current.json?key=dfecc53d1ca344578de35309230912&q=${city}`;
 
     axios.get(url)
         .then(res => {
