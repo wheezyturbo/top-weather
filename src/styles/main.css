@@ -1,77 +1,92 @@
-*,*::before,*::after{
-  margin:0;
-  padding:0;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:wght@200;400;600;800&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
 }
-body{
-  box-sizing:border-box;
+body {
+  box-sizing: border-box;
   background-color: rgb(17 24 39);
   color: rgb(209 213 219);
-  font-family:Poppins;
+  font-family: Poppins;
   background-repeat: no-repeat;
-    /* background-position: center; */
-    background-size: cover;
-    backdrop-filter: blur(5px);
+  /* background-position: center; */
+  background-size: cover;
+  backdrop-filter: blur(15px);
 }
 
-
-.container{
-  height:100vh;
-  width:100vw;
-  display:flex;
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
   justify-content: center;
-  align-items:center;
+  align-items: center;
 }
-.weatherBox{
+.weatherBox {
   /* height: 400px;
   width:300px; */
   display: flex;
-  flex-direction:column;
-  background:darkolivegreen;
+  flex-direction: column;
+  /* background: darkolivegreen; */
+  background:#4a4a4a69;
   align-items: center;
   justify-content: space-evenly;
-  font-family:1.2rem;
-  padding:50px;
-  gap:16px;
-  border-radius:12px;
-  color:white;
+  font-family: 1.2rem;
+  padding: 50px;
+  gap: 16px;
+  border-radius: 12px;
+  color: white;
+  box-shadow:2px 2px 10px -2px black;
+
 }
-.weatherBox input[type="text"]{
-  background:none;
-  border:none;
-  border-bottom:1px solid black;
-  font-size:1.1rem;
-  color:white;
+.weatherBox input[type="text"] {
+  background: none;
+  border: none;
+  border-bottom: 1px solid lightcoral;
+  font-size: 1.1rem;
+  color: white;
   /* width: 400px; */
-  height:30px;
-  padding:0 10px;
-  transition:0.3s ease-in-out;
+  height: 30px;
+  padding: 0 10px;
+  transition: 0.3s ease-in-out;
 }
-input[type="text"]::placeholder{
-  color:black;
+input[type="text"]::placeholder {
+  color: lightcoral;
 }
-.weatherBox input[type="text"]:focus{
-  outline:none;
+.weatherBox input[type="text"]:focus {
+  outline: none;
   background-color: rgba(127, 255, 212, 0.33);
 }
 
-.weatherBox button{
-  padding:10px 20px;
-  border-radius:12px;
-  font-weight:bold;
-  border:none;
-  background-color:coral;
+.weatherBox button {
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-weight: bold;
+  border: none;
+  background-color: coral;
 }
 
-#results{
-  font-size:1.1rem;
-  font-weight:bold;
-  height:100px;
+#results {
+  font-size: 1.1rem;
+  font-weight: bold;
+  height: 100px;
   /* width:200px; */
   display: flex;
-  gap:16px;
+  gap: 16px;
   align-items: center;
   justify-content: center;
 }
+
+.buttons{
+  display: flex;
+}
+
+#coords{
+  background:none;
+
+}
+
 
 .loading {
   width: 50px;
